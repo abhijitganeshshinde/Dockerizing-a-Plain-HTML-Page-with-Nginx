@@ -116,7 +116,17 @@ Check the public URL of the EC2 instance to verify if the HTML page is accessibl
     
         docker push public.ecr.aws/xxxxxxx/{imagesname}:{tag}
         ```
-    Replace `{imagesname}` and `{tag}` with your image name and desired tag.
+        Replace `{imagesname}` and `{tag}` with your image name and desired tag.
+
+    3. Access your image in the Amazon ECR Public Gallery:
+
+        - After pushing your image to Amazon ECR, go to the Amazon ECR Public service, then click on "View public listing" to access the Amazon ECR Public Gallery.
+
+        - Once in the gallery, you'll find your Image URI, for example:
+        public.ecr.aws/xxxxxxx/sampleplainhtml-nginx:latest
+
+        This URI uniquely identifies your pushed image within the Amazon ECR Public Gallery and allows others to access and utilize your container image.
+
 
 
 #### 5. Conclusion
